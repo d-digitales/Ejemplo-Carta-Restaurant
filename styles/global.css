@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400..700&display=swap');
 @font-face {
     font-family: "China";
-    src: url("../fuente/go3v2.ttf") format("truetype");
+    src: url("./fuente/go3v2.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -27,7 +27,7 @@ body{
 }
 
 body::after{
-    background-image: url('../imagenes/chinese.jpg');
+    background-image: url('./imagenes/chinese.jpg');
     background-size: contain;
     background-repeat: repeat;
     background-clip: content-box;
