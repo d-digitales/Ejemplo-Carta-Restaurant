@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400..700&display=swap');
+@font-face {
+    font-family: "China";
+    src: url("/fuente/go3v2.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    background-color: white;
+}
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Cabin";
+}
+
+body{
+    background-color: var(--rojo);
+    max-width: 600px;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+}
+
+body::after{
+    background-image: url('/imagenes/chinese.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: content-box;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+
+    opacity: 0.25;
+
+}
+
+section{
+    z-index: 2;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    font-weight: unset;
+    font-size: unset;
+    color: unset;
+}
+
+.h2,.h3,.h4,.h5,.h6,.text,.caption{
+    font-family: "China";
+    font-style: normal;
+    color: var(--blanco);
+}
+
+.display{
+    font-family: "China";
+    font-size: 64px;
+    color: var(--amarillo);
+}
+
+.h1{font-family: "China"; font-size: 48px;}
+.h2{font-size: 40px; font-weight: 700;}
+.h3{font-size: 32px; font-weight: 700;}
+.h4{font-size: 28px; font-weight: 700;}
+.h5{font-size: 20px; font-weight: 700;}
+.h6{font-size: 16px; font-weight: 700;}
+.text{font-size: 12px; font-weight: 400;}
+.caption{font-size: 10px; font-weight: 400;}
+
+.white{color: var(--blanco);}
+.amarillo{color: var(--amarillo);}
+.rojo{color: var(--rojo);}
+
+
+:root{
+    --amarillo:#fcba52;
+    --rojo:#cd1200;
+    --rojo-claro:#e01c0b;
+    --blanco: #fff;
+    --gris-suave: #f1f1f1;
+}
+
+.titulo{
+    color: var(--amarillo);
+    margin-bottom: 2rem;
+}
+
+.subtitulo{
+    color: var(--blanco);
+    font-size:14px;
+    font-weight: 700;
+}
