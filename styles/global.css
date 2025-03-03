@@ -43,6 +43,13 @@ body::after{
 
 }
 
+
+@media screen and (max-width: 500px) {
+    body{
+        height: 95vh;
+    }
+}
+
 section{
     z-index: 2;
     position: relative;
